@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Galvanize Secrets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css" />
+  </head>
+  <body>
+    <div class="ui secondary pointing menu">
+      <a class="active item">
+        Galvanize Secrets
+      </a>
+    </div>
+    <div class="ui container">
+      <div class="ui top attached tabular menu">
+        <a class="item active" data-tab="first">Login In</a>
+        <a class="item" data-tab="second">Sign Up</a>
+      </div>
+      <div class="ui bottom attached tab segment active" data-tab="first">
+        <div class="ui inverted segment">
+          <form class="ui inverted form login">
+            <div class="two fields">
+              <div class="field">
+                <label>Email</label>
+                <input placeholder="Email" name="login-email" type="email">
+              </div>
+              <div class="field">
+                <label>Password</label>
+                <input placeholder="Password" name="login-password" type="password">
+              </div>
+            </div>
+            <button type="submit" class="ui submit button">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="ui bottom attached tab segment" data-tab="second">
+        <div class="ui inverted segment">
+          <form class="ui inverted form signup">
+            <div class="two fields">
+              <div class="field">
+                <label>Username</label>
+                <input placeholder="Username" name="signup-username" type="text">
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input placeholder="Email" name="signup-email" type="email">
+              </div>
+              <div class="field">
+                <label>Password</label>
+                <input placeholder="Password" name="signup-password" type="password">
+              </div>
+            </div>
+            <div class="inline field">
+              <div class="ui checkbox active">
+                <input type="checkbox" tabindex="0" name="agree" class="hidden" checked="" required>
+                <label>I acknowledge that snitches get stitches</label>
+              </div>
+            </div>
+            <button type="submit" class="ui submit button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.js"></script>
+    <script src="scripts/app.js" type="text/javascript"></script>
+  </body>
+</html>
