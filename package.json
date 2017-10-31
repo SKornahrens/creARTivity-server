@@ -13,5 +13,18 @@
     "knex": "^0.13.0",
     "nodemon": "^1.12.1",
     "pg": "^7.0.2"
-  }
+  },
+  "description": "server for q3 project",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N8BIZ/creARTivity-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N8BIZ/creARTivity-server/issues"
+  },
+  "homepage": "https://github.com/N8BIZ/creARTivity-server#readme"
 }
