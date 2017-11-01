@@ -1,26 +1,27 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const auth = require('./routes/auth');
+const users = require('./routes/users');
+const gallery = require('./routes/gallery');
+const app = express();
 
-var auth = require('./routes/auth');
-var users = require('./routes/users');
-var gallery = require('./routes/gallery');
-var slice_art = require('./routes/slice_art');
-
-var app = express();
-
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', req.headers.origin);
   res.header('Access-Control-Allow-Headers', 'Authorization');
   next();
 });
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/auth', auth);
 app.use('/users', users);
 app.use('/gallery', gallery);
-app.use('/slice_art', slice_art);
+app.use('/', express.static('./public'))
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -41,5 +42,5 @@ app.use(function(err, req, res, next) {
   console.error(err);
 });
 
-
+// app.listen(PORT, () => console.log(`listening on port ${PORT}`))
 module.exports = app;

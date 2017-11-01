@@ -2,29 +2,19 @@
   "name": "galvanize-secrets",
   "version": "0.0.1",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon"
   },
   "dependencies": {
-    "bcrypt": "^1.0.3",
+    "bcrypt": "1.0.3",
     "body-parser": "~1.13.2",
+    "cors": "^2.8.4",
     "dotenv": "^4.0.0",
     "express": "~4.13.1",
+    "gitignore": "^0.6.0",
     "jsonwebtoken": "^8.1.0",
     "knex": "^0.13.0",
     "nodemon": "^1.12.1",
     "pg": "^7.0.2"
-  },
-  "description": "server for q3 project",
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/N8BIZ/creARTivity-server.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/N8BIZ/creARTivity-server/issues"
-  },
-  "homepage": "https://github.com/N8BIZ/creARTivity-server#readme"
+  }
 }
