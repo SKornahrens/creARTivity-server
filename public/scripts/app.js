@@ -36,7 +36,7 @@ function signUp(event) {
         //success: set token in local storage
         localStorage.setItem('token' , response.token)
         //redirect(location is a global var)
-        location.href = ('./secrets.html')
+        // location.href = ('./secrets.html')
         //get items out of local storage is similar:
         //localStorage.getItem('token')
       }

@@ -2,7 +2,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/secrets'
+    connection: 'postgres://localhost/creart'
   },
   production: {
     client: 'pg',
