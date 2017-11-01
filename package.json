@@ -8,6 +8,7 @@
   "dependencies": {
     "bcrypt": "1.0.3",
     "body-parser": "~1.13.2",
+    "cors": "^2.8.4",
     "dotenv": "^4.0.0",
     "express": "~4.13.1",
     "gitignore": "^0.6.0",
