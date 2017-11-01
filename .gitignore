@@ -40,3 +40,5 @@ typings/
 .yarn-integrity
 # dotenv environment variables file
 .env
+# public folder that we intend to use on front-end
+public
