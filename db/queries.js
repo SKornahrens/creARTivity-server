@@ -11,5 +11,19 @@ module.exports = {
     return knex('secrets')
       .select('id', 'secret')
       .where('user_id', id)
-  }
+  },
+  getGalleryById: function(id) {
+    return knex("gallery").where("users_id", id)
+  },
+  postGalleryById: function(data){
+  return knex("gallery").insert({
+    imageURL:data.imageURL,
+    users_id:data.users_id
+   })
+ },
+  deleteGalleryById: function(id){
+    return knex("gallery")
+            .where("id", id)
+            .del()
+ }
 }
